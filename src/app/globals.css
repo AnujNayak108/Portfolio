@@ -1,0 +1,86 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 88%; /* #E0E0E0 */
+
+    --card: 250 50% 10%; /* #100B26 */
+    --card-foreground: 0 0% 88%; /* #E0E0E0 */
+
+    --popover: 250 50% 9%;
+    --popover-foreground: 0 0% 88%;
+
+    --primary: 254 58% 49%; /* #4A2FBD */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 250 50% 12%; /* #140E2D */
+    --secondary-foreground: 0 0% 80%;
+
+    --muted: 250 50% 12%;
+    --muted-foreground: 250 10% 60%; /* #8C88A3 */
+
+    --accent: 250 60% 60%; /* #6F5FD9 */
+    --accent-h: 250;
+    --accent-s: 60%;
+    --accent-l: 60%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 250 50% 20%; /* #1F1847 A bit lighter for borders */
+    --input: 250 50% 15%; /* #18113A */
+    --ring: 250 60% 60%; /* Accent color for focus rings */
+
+    --radius: 0.5rem;
+
+    --chart-1: 250 70% 70%;
+    --chart-2: 200 70% 65%;
+    --chart-3: 30 80% 60%;
+    --chart-4: 120 50% 55%;
+    --chart-5: 330 70% 65%;
+
+    --sidebar-background: 250 50% 8%;
+    --sidebar-foreground: 0 0% 85%;
+    --sidebar-primary: 250 60% 60%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 250 50% 18%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 250 50% 22%;
+    --sidebar-ring: 250 60% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    /* For a subtle cosmic background, uncomment and provide an image path */
+    /* background-image: url('/cosmic-background.svg'); */
+    /* background-attachment: fixed; */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+  }
+}
+
+/* Custom glowing icon style */
+.glowing-icon {
+  color: hsl(var(--accent));
+  filter: drop-shadow(0 0 4px hsl(var(--accent))) drop-shadow(0 0 8px hsl(var(--accent)));
+}
+.glowing-icon-subtle {
+  color: hsl(var(--accent));
+  filter: drop-shadow(0 0 3px hsl(var(--accent)));
+}
+
+/* Section base styles */
+.section-padding {
+  @apply py-16 md:py-24 px-6 sm:px-8 lg:px-12;
+}
