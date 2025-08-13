@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { NAV_ITEMS, OWNER_NAME } from '@/lib/constants';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
-import { Menu, Sparkles } from 'lucide-react';
+import { Menu, Sparkles } from 'lucide-react'
 
 export function Header() {
   const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, href: string) => {
@@ -23,10 +23,7 @@ export function Header() {
     <header className="sticky top-0 z-50 md:px-8 px-2 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-screen-2xl items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
-          <Sparkles className="h-6 w-6 text-primary" />
-          <span className="font-bold sm:inline-block text-lg">
-            {OWNER_NAME}
-          </span>
+        <img src='./favicon.ico' className='w-8 h-8'></img>
         </Link>
         
         <div className="flex flex-1 items-center justify-end space-x-4">

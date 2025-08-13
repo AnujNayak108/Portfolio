@@ -26,16 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} dark`}>
       <body className="antialiased flex flex-col min-h-screen relative bg-background text-foreground">
-        <SnowflakeBackground
-          density={100}
-          minSize={2}
-          maxSize={6}
-          minSpeed={0.5}
-          maxSpeed={2}
-          colors={['#FFFFFF', '#E6F3FF', '#CCE7FF']}
-          shapes={['circle', 'star']}
-          className="fixed inset-0 z-[-1]"
-        />
+        <CosmicMeshBackground/>
         <div className="relative z-0 flex flex-col flex-grow w-full">
           {children}
         </div>

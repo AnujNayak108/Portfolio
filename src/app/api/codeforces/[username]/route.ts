@@ -6,7 +6,7 @@ export async function GET(
   request: NextRequest,
   { params }: { params: { username: string } }
 ) {
-  const username = params.username;
+  const username = await params.username;
 
   if (!username) {
     return NextResponse.json({ error: 'Username is required' }, { status: 400 });

@@ -35,7 +35,7 @@ export function SnowflakeBackground({
   colors = ['#FFFFFF', '#E6F3FF', '#CCE7FF'],
   shapes = ['circle', 'star'],
   className = "",
-  maxPileHeight = 100
+  maxPileHeight = 50
 }: SnowflakeBackgroundProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const snowflakesRef = useRef<SnowflakeParticle[]>([]);

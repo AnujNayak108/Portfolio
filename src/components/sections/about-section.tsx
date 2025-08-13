@@ -103,7 +103,7 @@ export function AboutSection() {
         </h2>
         <Card className="max-w-3xl mx-auto p-6 sm:p-8 shadow-xl bg-card/80 backdrop-blur-sm min-h-[200px]">
           <CardContent className="pt-6">
-            <p className="text-lg text-green-400 font-mono leading-relaxed whitespace-pre-wrap">
+            <p className="md:text-lg text-sm text-blue-400 font-mono leading-relaxed whitespace-pre-wrap">
               <span>{typedBio}</span>
               {isTypingBio && <span className="animate-pulse ml-1 text-green-400">|</span>}
             </p>
