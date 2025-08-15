@@ -130,7 +130,7 @@ export function HeroSection() {
         </p>
         <div className="flex justify-center items-center gap-4">
           <a
-            href="#projects"
+            href="https://drive.google.com/file/d/1pGV73mTSnDdcjxwiELBNqIUCepmuUlwH/view?usp=sharing"
             className="px-6 py-3 bg-primary text-white rounded-full hover:bg-primary/90 transition-colors"
           >
             View Resume
